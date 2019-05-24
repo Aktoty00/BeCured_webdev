@@ -83,7 +83,6 @@
     <div *ngFor = "let l of appointments">           
       <input class="lists" type="text" [(ngModel)] = "l.name">  
       <input class="lists" type="text" [(ngModel)] = "l.text">  
-
       <span class="delete" (click) = "deleteAppointment(l)" > DELETE</span>
     </div>
     

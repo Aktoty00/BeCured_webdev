@@ -4,6 +4,7 @@ from rest_framework import status
 from ..models import Doctor, Patient, Treatment, Appointment
 from ..serializers import DoctorSerializer, PatientSerializer, AppointmentSerializer, TreatmentSerializer
 
+
 @api_view(['GET', 'POST'])
 def TreatmentLists(request):
     if request.method == 'GET':
